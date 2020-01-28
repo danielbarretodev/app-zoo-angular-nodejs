@@ -1,0 +1,116 @@
+/* You can add global styles to this file, and also import other style files */
+
+    body {
+      display: grid;
+
+    }
+
+    .control-panel {
+    position: fixed;
+    height: 100vh;
+    width: 12vw;
+    z-index: 1;
+    }
+
+    .page-content {
+        position: relative;
+        margin-left: 13vw;
+        margin-top: 16vh;
+        z-index: 1;
+    }
+
+    .center-content {
+      position: relative;
+      margin-left: 35vw;
+    
+    }
+
+    .panel-user {
+      position: absolute;
+      right: 0;
+      max-height: 40px;
+    }
+
+    .panel-superior {
+      display: grid;
+      position: fixed;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding-left: 16vw;
+      width: 100vw;
+      height: 13.3vh;
+      z-index: 2;
+    }
+
+
+    .buscador {
+      display: inline-block;
+      width: 50% !important;
+      margin-left: auto;
+      margin:auto;
+    }
+
+
+/**
+estilos para el panel de usuario
+*/
+
+button:focus {
+outline: none;
+}
+
+    .modal-backdrop {
+      height: 0px !important;
+      width: 0px !important;
+    }
+
+    .modal.fade .modal-dialog {
+      position: fixed;
+      right: 7%;
+      z-index: 1000;
+
+    }
+
+
+
+.btn-danger {
+
+  color: #fff !important;
+  background: #c82333 !important;
+  border-color: #bd2130 !important;
+  margin-left: 10px !important;
+}
+
+.btn-info {
+    color: #fff !important;
+    background-color: #17a2b8 !important;
+    border-color: #17a2b8 !important;
+}
+
+.margin-panel-user{
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 80px;
+  overflow: hidden;
+
+}
+
+/*Downloaded from https://www.codeseek.co/drewbkoch/check-mark-success-animation-ogyXEK */
+.checkmark-circle {
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.checkmark-circle .background {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #2EB150;
+
+}
+
+.checkmark-circle .checkmark {
+  border-radius: 5px;
+}

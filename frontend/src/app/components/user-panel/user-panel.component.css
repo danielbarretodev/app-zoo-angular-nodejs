@@ -1,0 +1,35 @@
+.login-container{
+  margin-top: 120px;
+  margin-left: 50px;
+  width: 220px;
+  height: 150px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+#output{
+    position: absolute;
+    width: 300px;
+    top: -75px;
+    left: 0;
+    color: #fff;
+}
+
+#output.alert-success{
+    background: rgb(25, 204, 25);
+}
+
+#output.alert-danger{
+    background: rgb(228, 105, 105);
+}
+
+.avatar{
+    width: 70px;
+    height: 70px;
+    margin-left: 90px;
+    border-radius: 100%;
+    border: 2px solid #aaa;
+    background-size: cover;
+}

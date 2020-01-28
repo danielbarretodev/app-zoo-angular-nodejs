@@ -1,0 +1,37 @@
+<!-- Button trigger modal -->
+  <button type="button" class="btn btn-danger ml-1" data-toggle="modal" data-target="#registerModal">
+    Registro
+  </button>
+
+<!-- Modal -->
+<div class="modal fade " id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog   modal-content login-container">
+    <div *ngIf="registro_complete==false; else elseBlock" class="">
+
+
+    <button type="button align-content-right" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+    </button>
+            <div id="output"></div>
+            <div class="avatar"></div>
+            <div class="form-box">
+                <form  #formRegistro="ngForm" (ngSubmit)="onSubmit()">
+                  <input name="name" #name="ngModel" [(ngModel)]="user.name" type="text" placeholder="nombre" required>
+                  <input name="surname"  #surname="ngModel" [(ngModel)]="user.surname" type="text" placeholder="apellidos">
+                  <input name="email"  #email="ngModel" [(ngModel)]="user.email" type="text" placeholder="correo electronico">
+                  <input name="password" type="password"  #password="ngModel" [(ngModel)]="password_aux" >
+             <input class="text-dark btn-block login btn btn-danger mt-2" value="Registro" type="submit">
+                </form>
+
+            </div>
+      </div>
+    <ng-template #elseBlock>
+        <div class="ml-auto mr-auto mt-4 checkmark-circle">
+       <div class="background"></div>
+       <div class="checkmark draw"></div>
+
+       </div>
+       <h2 class="mt-4 h5 text-success">Registro Completado Con éxito</h2>
+    </ng-template>
+  </div>
+</div>

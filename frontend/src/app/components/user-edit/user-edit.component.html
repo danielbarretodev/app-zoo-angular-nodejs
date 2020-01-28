@@ -1,0 +1,12 @@
+
+<div class="d-flex page-content">
+  <div class="center-content">
+    <form #userEditForm="ngForm" (ngSubmit)="onSubmit()" class="d-flex flex-column">
+      <h3 class="position-relative">{{title}}</h3>
+      <input class="p-2" name="name" #name="ngModel" [(ngModel)]="user.name" type="text" placeholder="nombre" required>
+      <input class="p-2" name="surname"  #surname="ngModel" [(ngModel)]="user.surname" type="text" placeholder="apellidos">
+      <input class="p-2" name="email"  #email="ngModel" [(ngModel)]="user.email" type="text" placeholder="correo electronico">
+      <button class="btn btn-info btn-block login mt-2 mb-3" type="submit">Login</button>
+    </form>
+  </div>
+</div>
